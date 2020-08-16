@@ -59,7 +59,7 @@ const createSessions = (user) => {
         token: token,
       };
     })
-    .catch(console.log("oi"));
+    .catch((err) => console.log(err.message));
 };
 
 const signinAuthentication = (db, bcrypt) => (req, res) => {

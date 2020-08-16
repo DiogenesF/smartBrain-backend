@@ -7,6 +7,7 @@ values
 INSERT into login
     (hash, email)
 values
+    /* senha = 123 */
     ('$2a$10$joqwWutyIxfucntraGDg8OujeyT3lIbro9PF9N6o6vXX.gxXKdaTu', 'jessie@gmail.com');
 
 COMMIT;
