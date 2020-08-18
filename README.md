@@ -22,9 +22,9 @@ The application also has the record of how many images the user have uploaded in
 And the code to make the simple [lambda function returning an emoji to the user here](https://github.com/DiogenesF/smartBrain-lambda-badges).
 I'm making use of Redis in this app to cache the JWT token of the user.
 
-The application is making use of docker compose to set up 3 different images (Postgres, redis and node) and connect them in the container.
+The application is making use of docker compose to set up 3 different containers (Postgres, redis and node) and connect them.
 
-The container is being hosted by an instance of AWS EC2 and the frontend of this app is making use of this deployed container to access the backend.
+The containers are being hosted by an instance of AWS EC2 and the frontend of this app is making use of this deployed container to access the backend.
 And finally
 
 
