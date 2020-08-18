@@ -28,9 +28,16 @@ The containers are being hosted by an instance of AWS EC2 and the frontend of th
 And finally
 
 
-## If you want to run this locally, make sure you have docker installed and running in your computer
+## If you want to run this in a container, make sure you have docker installed and running in your computer
 Clone the repo and in the root folder you can run:
 
 ```docker-compose up --build```
 
 After that the application will be running on ```localhost:3000``` if fyou have docker or ```192.168.99.100:3000 ``` if you have docker toolbox.
+
+## You can also run it locally, but make sure to configure your postgres and redis with the Node application
+And then just run
+
+```npm install``` and
+
+```npm start```
