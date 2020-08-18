@@ -6,6 +6,7 @@ You can find the frontend repo of this application [here](https://github.com/Dio
 - Node.js
 - Postgres
 - Redis
+- Knex
 - Docker
 - AWS
 
@@ -13,6 +14,8 @@ You can find the frontend repo of this application [here](https://github.com/Dio
 This application is the banckend of an application that handles user authentication and detect faces in an image that the user can upload.
 
 Every user has a profile that can be updated. The user image is stored in a bucket in AWS S3 and the link to that image in stored in a postgres database along with all the user information.
+
+All the queries in the database are made using Knex.
 
 The application also has the record of how many images the user have uploaded in the face detector, this number is sent to an AWS Lambda function to return an emoji to the user. You can check [the code used to set up the bucket in AWS S3 using serverless here](https://github.com/DiogenesF/smartBrain-aws-s3).
 
