@@ -16,7 +16,7 @@ const auth = require("./controllers/authorization");
   connection: {
     host: "localhost",
     user: "postgres",
-    password: "98215882",
+    password: "",
     database: "postgres",
     port: 5432,
   },
